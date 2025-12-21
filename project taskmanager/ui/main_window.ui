@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Database Schema Designer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+
+    <item>
+     <widget class="QWidget" name="leftPanel">
+      <layout class="QVBoxLayout" name="leftLayout">
+
+       <item>
+        <widget class="QLabel" name="labelTables">
+         <property name="text">
+          <string>Tables</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLineEdit" name="tableNameInput">
+         <property name="placeholderText">
+          <string>Table name</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="addTableButton">
+         <property name="text">
+          <string>Add Table</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="deleteTableButton">
+         <property name="text">
+          <string>Delete Table</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QListWidget" name="tableList"/>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="labelAttributes">
+         <property name="text">
+          <string>Attributes</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="editAttributeButton">
+         <property name="text">
+          <string>Edit Attribute</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="deleteAttributeButton">
+         <property name="text">
+          <string>Delete Attribute</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QLabel" name="labelRelations">
+         <property name="text">
+          <string>Relationships</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="addRelationshipButton">
+         <property name="text">
+          <string>Add Relationship</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QPushButton" name="deleteRelationshipButton">
+         <property name="text">
+          <string>Delete Relationship</string>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+
+    <item>
+     <widget class="QGraphicsView" name="schemaCanvas">
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>400</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+
+
+    <item>
+     <widget class="QWidget" name="rightPanel">
+      <layout class="QVBoxLayout" name="rightLayout">
+
+       <item>
+        <widget class="QLabel" name="labelSQL">
+         <property name="text">
+          <string>Generated SQL</string>
+         </property>
+        </widget>
+       </item>
+
+       <item>
+        <widget class="QTextEdit" name="sqlOutput">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

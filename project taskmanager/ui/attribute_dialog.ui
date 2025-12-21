@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AttributeDialog</class>
+ <widget class="QDialog" name="AttributeDialog">
+  <property name="windowTitle">
+   <string>Add Attribute</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelAttrName">
+     <property name="text">
+      <string>Attribute Name</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="attributeNameEdit"/>
+   </item>
+
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelType">
+     <property name="text">
+      <string>Data Type</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="typeCombo">
+     <item><property name="text"><string>INTEGER</string></property></item>
+     <item><property name="text"><string>TEXT</string></property></item>
+     <item><property name="text"><string>REAL</string></property></item>
+     <item><property name="text"><string>DATE</string></property></item>
+    </widget>
+   </item>
+
+   <item row="2" column="1">
+    <widget class="QCheckBox" name="primaryKeyCheck">
+     <property name="text">
+      <string>Primary Key</string>
+     </property>
+    </widget>
+   </item>
+
+   <item row="3" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Ok|QDialogButtonBox::Cancel</set>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
