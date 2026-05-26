@@ -1,6 +1,5 @@
 # Database Schema Designer
 NAMES:
-GROUPE 06
 Saadi Abderrahim
 Mimoune Islam
 ## Overview
